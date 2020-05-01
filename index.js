@@ -1,3 +1,4 @@
+//Иницилизация
 let $start = document.querySelector('#start');
 let $game = document.querySelector("#game")
 let $time = document.querySelector("#time");
@@ -48,7 +49,7 @@ function startGame() {
     score = 0;
     $gameTime.setAttribute('disabled', 'true')
     setTime();
-
+    //Скрыть кнопку
     hide($start)
     $game.style.background = "#fff"
     gameStarted = true;
@@ -115,7 +116,7 @@ function renderBox() {
     box.style.cursor = "pointer";
     box.setAttribute('data-box', 'true')
 
-    //
+
     // Добавление в поле 
     $game.insertAdjacentElement('afterbegin', box)
     colorBox(box);
