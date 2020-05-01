@@ -23,9 +23,9 @@ function hide($el) {
     $el.classList.add('hide')
 }
 
-//1 шаг
+
 $start.addEventListener("click", startGame);
-//2 шаг
+
 $game.addEventListener("click", handleBox);
 
 $gameTime.addEventListener("input", setTime);
